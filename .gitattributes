@@ -1,17 +1,51 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Custom for Visual Studio
-*.cs     diff=csharp
+# KiCad schematic and board files (text-based s-expression)
+*.kicad_sch text diff
+*.kicad_pcb text diff
+*.kicad_pro text diff
+*.kicad_sym text diff
+*.kicad_mod text diff
+*.kicad_wks text diff
+*.kicad_dru text diff
 
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+# KiCad legacy formats (treat as binary, don't mangle)
+*.sch binary
+*.brd binary
+*.lib binary
+*.dcm binary
+
+# Gerber & drill outputs
+*.gbr binary
+*.drl binary
+*.gbrjob text
+
+# PDF datasheets
+*.pdf diff=astextplain binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg text
+*.bmp binary
+
+# 3D models
+*.step binary
+*.stp binary
+*.wrl binary
+
+# Arduino library
+*.cpp text diff=cpp
+*.h text diff=cpp
+*.ino text diff=cpp
+*.json text
+*.properties text
+*.md text diff=markdown
+
+# Archives
+*.zip binary
+
+# Force LF on shell scripts
+*.sh text eol=lf
