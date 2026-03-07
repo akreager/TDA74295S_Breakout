@@ -19,30 +19,25 @@ The TDA7429 is an I²C-controlled audio DSP designed for TV and Hi-Fi systems. I
 ## Repository Structure
 
 ```
-├── hardware/
-│   ├── kicad/                  # KiCad 7+ project files
-│   │   ├── TDA7429_BREAKOUT.kicad_pro
-│   │   ├── TDA7429_BREAKOUT.kicad_sch
-│   │   └── TDA7429_BREAKOUT.kicad_pcb
-│   ├── lib/                    # KiCad symbol & footprint library
+├── pcb/
+│   ├── TDA7429_BREAKOUT.kicad_pro      # KiCad project
+│   ├── TDA7429_BREAKOUT.kicad_sch      # Schematic
+│   ├── TDA7429_BREAKOUT.kicad_pcb      # PCB layout
+│   ├── fp-lib-table                    # Footprint library table
+│   ├── sym-lib-table                   # Symbol library table
+│   ├── eagle2kicad_pcb.py              # Board conversion script
+│   ├── eagle2kicad_sch.py              # Schematic conversion script
+│   ├── TDA7429_KiCad_Lib/             # Custom KiCad library
 │   │   ├── TDA7429.kicad_sym
 │   │   └── TDA7429.pretty/
 │   │       └── SDIP-42_W15.24mm_P1.778mm.kicad_mod
-│   └── eagle/                  # Original Eagle 6.5 files (reference)
+│   └── Archive Eagle Design/           # Original Eagle 6.5 files
 │       ├── TDA7429_BREAKOUT.sch
-│       └── TDA7429_BREAKOUT.brd
-├── firmware/
-│   └── TDA7429/                # Arduino library
-│       ├── src/
-│       │   ├── TDA7429.h
-│       │   └── TDA7429.cpp
-│       ├── examples/
-│       │   └── BasicControl/
-│       │       └── BasicControl.ino
-│       ├── library.properties
-│       └── keywords.txt
-├── docs/
-│   └── TDA7429S_TDA7429T.pdf   # Datasheet
+│       ├── TDA7429_BREAKOUT.brd
+│       └── TDA7429_BREAKOUT.pdf
+├── TDA7429S TDA7429T.pdf               # Datasheet
+├── .gitattributes
+├── .gitignore
 └── README.md
 ```
 

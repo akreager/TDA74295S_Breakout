@@ -80,6 +80,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+listing.csv
 
 # Linux
 *~
