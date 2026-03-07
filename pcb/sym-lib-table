@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TDA7429")(type "KiCad")(uri "${KIPRJMOD}/TDA7429_KiCad_Lib/TDA7429.kicad_sym")(options "")(descr ""))
+)
