@@ -620,6 +620,10 @@
     [
       "50637fb6-0dea-42c2-b2a4-0fe1d6ab31f2",
       "Root"
+    ],
+    [
+      "7985ab3a-3bc2-46ab-9bf3-cff4f679d88c",
+      "power_input"
     ]
   ],
   "text_variables": {}
